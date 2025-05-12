@@ -33,7 +33,7 @@ function QuanLyThuGiaoXu() {
     }, []);
 
     const handleDelete = (id) => {
-        if (window.confirm("Bạn chắc chắn muốn xóa thư này không?")) {
+        if (window.confirm("chắc chắn muốn xóa thư này không?")) {
             fetch(`https://song-dao-backend.onrender.com/thugiaoxu/entry/${id}`, {
                 method: 'DELETE',
             })
