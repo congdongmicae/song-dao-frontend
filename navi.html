@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Navigation Bar With Dropdown Using HTML and CSS</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Agbalumo&family=Josefin+Sans:wght@500&family=Pacifico&display=swap"
+        rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Oswald&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Agbalumo&family=Archivo:wght@600&family=Josefin+Sans:wght@500&family=Pacifico&display=swap"
+        rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Agbalumo&family=Archivo:wght@600;700&family=Josefin+Sans:wght@500&family=Pacifico&display=swap"
+        rel="stylesheet">
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            outline: none;
+        }
+
+        body {
+            font-family: Archivo;
+            overflow-x: hidden;
+            color: #42424A;
+        }
+
+        a {
+            text-decoration: none;
+        }
+
+        a:link {
+            color: rgb(97, 149, 168);
+        }
+
+        a:active {
+            color: rgb(97, 149, 168);
+        }
+
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            outline: none;
+        }
+
+        body {
+            font-family: Archivo;
+            overflow-x: hidden;
+            color: #000000;
+        }
+
+        header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            width: 100%;
+            padding: 0 50px;
+            border-bottom: 1px solid #dbdbdb;
+            box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+        }
+
+        header ul li {
+            display: inline-block;
+            list-style: none;
+            margin: 0 26.5px;
+        }
+
+        header ul li:last-child {
+            margin-right: 0;
+        }
+
+        header ul li a {
+            text-decoration: none;
+            color: #42424a;
+            padding: 22px 0;
+            display: inline-block;
+            transition: all ease 0.3s;
+            font-size: 14px;
+        }
+
+        header ul li a:hover {
+            color: rgb(148, 232, 255);
+        }
+
+        /* submenu style */
+        header ul .submenu {
+            position: absolute;
+            width: 200px;
+            background-color: rgba(116, 179, 202, 0.794);
+            box-shadow: 0 20px 45px #00000020;
+            margin-top: -50px;
+            opacity: 0;
+            z-index: -999;
+            transition: all ease 0.5s;
+            
+        }
+
+        header ul li:hover .submenu {
+            z-index: 99;
+            opacity: 0.9;
+            margin-top: 0;
+            
+        }
+
+        header ul .submenu li {
+            margin: 0;
+            width: 100%;
+           
+        }
+
+        header ul .submenu li a {
+            padding: 15px 20px;
+            display: inline-block;
+            width: 100%;
+        }
+
+    
+
+        .lang {
+            text-decoration: none;
+            color: #42424a;
+            padding: 22px 0;
+            display: inline-block;
+            transition: all ease 0.3s;
+            font-size: 14px;
+            font-family: Be Vietnam Pro ExtraBold;
+        }
+
+        .img-logo {
+            width: 65px;
+            margin-top: 5px;
+            margin-bottom: 5.5px;
+
+        }
+
+        .head {}
+
+        .sub-header {
+            font-family: Be Vietnam Pro Medium;
+            font-size: 14px;
+        }
+
+        .logo-text {
+            display: inline-block;
+            color: rgb(164, 27, 16);
+            height: 50px;
+            width: 170px;
+            margin-top: 13px;
+            margin-left: 10px;
+            font-family: Be Vietnam Pro ExtraBold;
+        }
+
+        .logo {
+            transition: 500ms;
+        }
+
+        .logo:hover {
+            opacity: 0.7;
+        }
+    </style>
+</head>
+
+<body>
+
+
+    <header>
+        <div class="logo">
+            <a href="index.html">
+                <img src="img/micae_blue.png" class="img-logo" align="left">
+                <div class="logo-text">
+
+                    SỐNG ĐẠO <br> <span class="sub-header"> Cộng Đồng Thánh Micae </span>
+
+                </div>
+
+            </a>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="#">THÔNG TIN</a>
+                    <ul class="submenu">
+                        <li><a href="#">LỊCH</a></li>
+                        <li><a href="#">THƯ GIÁO XỨ</a></li>
+                        <li><a href="#">THƯ MỜI</a></li>
+                        <li><a href="#">CÁO PHÓ</a></li>
+                    </ul>
+                </li>
+                <li><a href="#">KINH NGUYỆN</a></li>
+                <li><a href="#">SINH HOẠT</a></li>
+                <li><a href="#">MEDIA</a>
+                    <ul class="submenu">
+                        <li><a href="#">Beds</a></li>
+                        <li><a href="#">Chairs</a></li>
+                        <li><a href="#">Cebinets</a></li>
+                        <li><a href="#">Desk & Table</a></li>
+                        <li><a href="#">Bookcase</a></li>
+                    </ul>
+                </li>
+                <li><a href="#">CỘNG ĐỒNG</a></li>
+                <li><a href="#">LIÊN HỆ</a></li>
+
+                <li><a href="#" class="lang">NGÔN NGỮ</a>
+                    <ul class="submenu">
+                        <li><a href="#">Beds</a></li>
+                        <li><a href="#">Chairs</a></li>
+                        <li><a href="#">Cebinets</a></li>
+                        <li><a href="#">Desk & Table</a></li>
+                        <li><a href="#">Bookcase</a></li>
+                    </ul>
+                </li>
+            </ul>
+        </nav>
+    </header>
+
+
+
+</body>
+
+</html>

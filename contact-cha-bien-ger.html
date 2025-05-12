@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="de">
+
+<head>
+    <meta charset="UTF-8">
+    <title>
+        Kontaktiere Pfarrer Biên
+    </title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:wght@200;300;500;800&display=swap"
+        rel="stylesheet">
+    <script src="https://kit.fontawesome.com/22a10cf444.js" crossorigin="anonymous"></script>
+    <link rel="icon" type="image/x-icon" href="img/micae_blue.ico">
+</head>
+<!-- oncontextmenu="return false;" ondragstart="return false;" // Für nicht Bild kopieren   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">-->
+
+<body oncontextmenu="return false;" ondragstart="return false;">
+    <div class="container-form">
+        <div class="header-form-cha">
+            Schreib eine Nachricht an Pfarrer Biên
+        </div>
+        <form action="https://formsubmit.co/bienbui@gmail.com" method="POST">
+            <!-- Honeypot -->
+            <input type="text" name="_honey" style="display:none;">
+            <!-- Disable Captcha-->
+            <input type="hidden" name="_captcha" value="false">
+            <div>
+                <div class="form-fname">
+                    <label for="firstName"> Vorname </label>
+                    <input type="text" class="input-field-name" name="name" id="firstName" placeholder="Vorname" required>
+                </div>
+                <div class="form-lname">
+                    <label for="LastName"> Nachname </label>
+                    <input type="text" class="input-field-name" name="nachname" id="lastName" placeholder="Nachname" required>
+                </div>
+            </div>
+            <div>
+                <label for="yourMail"> E-Mail </label>
+                <input type="email" class="input-field" name="email" id="yourMail" placeholder="E-Mail" required>
+            </div>
+            <label for="subject"> Betreff </label>
+            <input type="text" class="input-field" name="betreff" id="subject" placeholder="Betreff" required>
+            <label for="message"> Nachricht </label>
+            <textarea type="text" class="input-field" name="nachricht" id="message" required></textarea>
+            <center>
+                <button type="submit" class="send">
+                    Senden
+                </button>
+            </center>
+        </form>
+    </div>
+</body>
+
+</html>

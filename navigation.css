@@ -1,0 +1,173 @@
+body {
+    margin: 0;
+    font-family: 'Archivo', sans-serif;
+    font-weight: 600;
+}
+
+.topnav {
+    overflow: hidden;
+    background-color: #ffffff;
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+    /*
+    position: fixed;
+    top: 0;
+    width: 100%;
+    */
+
+}
+
+.topnav a {
+    float: left;
+    display: block;
+    color: #2e2e2e;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 18px;
+    /*to align dopdown with topnav*/
+    padding-top: 30px;
+    transition: 500ms;
+}
+
+.topnav .icon {
+    display: none;
+}
+
+.dropdown {
+    float: left;
+    overflow: hidden;
+}
+
+.dropdown .dropbtn {
+    font-size: 18px;
+    border: none;
+    outline: none;
+    color: #2e2e2e;
+    padding: 30px 16px;
+    background-color: inherit;
+    font-family: 'Archivo', sans-serif;
+    font-weight: 600;
+    margin: 0;
+    transition: 500ms;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: rgba(182, 226, 243, 0.829);
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+    z-index: 1;
+}
+
+.dropdown-content a {
+    float: none;
+    color: black;
+    padding: 16px 10px;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+    text-align: center;
+}
+
+.topnav a:hover,
+.dropdown:hover .dropbtn {
+    color: rgb(121, 199, 221);
+}
+
+.dropdown-content a:hover {
+    color: rgb(88, 143, 158);
+    transition: 500ms;
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+@media screen and (max-width: 1080px) {
+
+    .topnav a:not(:first-child),
+    .dropdown .dropbtn {
+        display: none;
+    }
+
+    .topnav a.icon {
+        float: right;
+        display: block;
+    }
+}
+
+@media screen and (max-width: 1080px) {
+    .topnav.responsive {
+        position: relative;
+    }
+
+    .topnav.responsive .icon {
+        position: absolute;
+        right: 0;
+        top: 0;
+    }
+
+    .topnav.responsive a {
+        float: none;
+        display: block;
+        text-align: left;
+    }
+
+    .topnav.responsive .dropdown {
+        float: none;
+    }
+
+    .topnav.responsive .dropdown-content {
+        position: relative;
+    }
+
+    .topnav.responsive .dropdown .dropbtn {
+        display: block;
+        width: 100%;
+        text-align: left;
+    }
+}
+
+.img-logo {
+    width: 45px;
+    float: left;
+}
+
+.logo-text {
+    display: inline-block;
+    color: rgb(164, 27, 16);
+    height: 50px;
+    width: 170px;
+    margin-left: 10px;
+    font-family: 'Be Vietnam Pro', sans-serif;
+    font-weight: 700;
+    text-align: left;
+}
+
+.logo a{
+    transition: 500ms;
+    padding-top: 22px;
+}
+
+.logo:hover {
+    opacity: 0.7;
+}
+
+.sub-header {
+    /*FONT AND WEIGHT*/
+    font-family: 'Be Vietnam Pro', sans-serif;
+    font-weight: 500;
+    font-size: 14px;
+    text-align: left;
+}
+
+.logo-text:hover {
+    opacity: 0.7;
+}
+
+.dropdown.language {
+    float: right;
+    background-color: #ffffff;
+    color: rgb(93, 187, 213);
+}

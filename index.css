@@ -1,0 +1,95 @@
+/*element name selector*/
+a {
+    text-decoration: none;
+}
+
+body {
+    background-color: rgb(255, 255, 255);
+}
+
+/*class name selector > element name selector, which is why margin top: 0 is ignored an 7px will be used*/
+p {
+    font-family: Be Vietnam Pro;
+    margin-top: 0;
+    margin-bottom: 0;
+}
+.head-website {
+    margin-top: 43px;
+    margin-bottom: 20px;
+}
+/*class name selector*/
+.logo {
+    text-align: center;
+    font-size: 50px;
+    font-weight: bold;
+    color: rgb(191, 144,0);
+    line-height: 37px;
+    transition: 0.15s;
+    width: 283.75px;
+    margin: 0 auto; /*to center inline block*/
+}
+
+a.a-logo {
+    color: rgb(191, 144,0);
+    margin-top: 43px;
+}
+
+
+.logo:hover {
+    opacity: 0.7;
+}
+
+.logo:active {
+    opacity: 0.5;
+}
+
+.subline {
+    font-size: 20px;
+    margin-top: 5px;
+    color: rgb(191, 144,0);
+    font-weight: lighter;
+}
+
+.text {
+    font-size: 14px;
+    width: 500px;
+    color:chocolate;
+    margin-top: 30px;
+    line-height: 23px;
+}
+
+.about {
+    font-weight: bold;
+    font-size: 20px;
+    margin-top: 30px;
+    color: white;
+    background-color: rgba(255,255,255,0); 
+    padding-top: 7px;
+    padding-bottom: 7px;
+    padding-left: 15px;
+    padding-right: 15px;
+    border-radius: 33px;
+    border-color:  rgb(144, 164, 178);
+    border-style: solid;
+    border-width: 3.7px;
+    margin-top: 0;
+}
+
+.micae {
+    border-radius: 20px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 90%;
+}
+
+/*div is also a block*/
+.languages {
+    font-weight: lighter;
+    font-size: 25px;  
+}
+
+.language-box {
+    width: 120px;
+    float: right;
+}
