@@ -1,0 +1,158 @@
+.cao-pho-quan-ly-container {
+    width: 100vw;
+    min-height: 92vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 10px;
+    box-sizing: border-box;
+}
+
+.cao-pho-content-container {
+    margin-top: 160px;
+}
+
+.cao-pho-create-new-entry-btn {
+    width: 200px;
+    height: 30px;
+    border-radius: 50px;
+    border: none;
+    background: rgb(110, 216, 255);
+    cursor: pointer;
+    font-weight: 700;
+    transition: 200ms;
+}
+
+.create-new-entry-btn:hover {
+    background: rgba(110, 216, 255, 0.699);
+}
+
+.cao-pho-button-container {
+    position: absolute;
+    top: 160px;
+    left: 68px;
+}
+
+.add-icon {
+    vertical-align: middle;
+    margin-right: 4px;
+}
+
+.cao-pho-show-entry-container {
+    width: 70vw;
+    padding-left: 70px;
+    margin-right: 0px;
+    display: flex;
+    flex-wrap: wrap;             
+    justify-content: flex-start; 
+    gap: 20px;                    
+    box-sizing: border-box;
+}
+
+.cao-pho-entry {
+    color: white;
+    width: 300px;
+    height: 413px;
+    background: rgba(0, 0, 0, 0.671);
+    border-top-left-radius: 10px;
+    margin-bottom: 30px;
+    border-radius: 10px;
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.11);
+}
+
+.cao-pho-entry-cover img {
+    overflow: hidden;
+    width: 300px;
+    height: 270px;
+    object-fit: cover;
+    object-position: top;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+}
+
+.birth {
+    margin-top: 7px;
+    font-size: 15px;
+}
+
+.death {
+    margin-top: 5px;
+    font-size: 15px;
+}
+
+.cao-pho-entry-info {
+    padding-top: 12px;
+    font-weight: 800;
+}
+
+.cao-pho-btn-container {
+    display: inline-block;
+    margin-top: 13px;
+}
+
+.cao-pho-download-btn {
+    color: rgb(255, 255, 255);
+    margin-right: 15px;
+    width: 130px;
+    height: 30px;
+    border-radius: 5px;
+    border: none;
+    background: rgb(90, 32, 119);
+    transition: 200ms;
+    cursor: pointer;
+}
+
+.cao-pho-download-btn:hover {
+    background: rgba(90, 32, 119, 0.733);
+}
+
+.download-icon {
+    vertical-align: middle;
+    margin-left: 4px;
+}
+
+.cao-pho-xem-btn {
+    color: rgb(255, 255, 255);
+    width: 120px;
+    height: 30px;
+    border-radius: 5px;
+    border: none;
+    background: rgb(90, 32, 119);
+    transition: 200ms;
+    cursor: pointer;
+}
+
+.cao-pho-xem-btn:hover {
+    background: rgba(90, 32, 119, 0.733);
+}
+
+.xem-icon {
+    vertical-align: middle;
+    margin-left: 4px;
+}
+
+.footer-cao-pho {
+    margin-top: 10px;
+    padding-left: 60px;
+    width: 100%;
+    margin-bottom: 20px;
+}
+
+.copyright-cao-pho {
+    width: 680px;
+    font-size: 13px;
+    display: inline-block;
+    font-weight: 500;
+}
+.year-cao-pho {
+    width: 80px;
+    font-size: 13px;
+    font-weight: bold;
+    display: inline-block;
+    text-align: right;
+    float: right;
+    margin-right: 70px;
+    margin-top: 2px;
+    cursor: default;
+}

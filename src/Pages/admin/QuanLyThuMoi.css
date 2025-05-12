@@ -1,0 +1,187 @@
+.quan-ly-thu-moi-container {
+    width: 100vw;
+    min-height: 92vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 10px;
+    box-sizing: border-box;
+}
+
+.edit-thu-moi-banner {
+    margin-bottom: 60px;
+    font-weight: 800;
+    font-size: 30px;
+    margin-left: 70px;
+}
+
+.edit-thu-moi-sub-header {
+    display: block;
+}
+
+.create-thu-moi-button-container {
+    margin-top: 10px;
+    font-weight: 500;
+    font-size: 16px;
+}
+
+.create-new-entry-thu-moi-btn {
+    width: 200px;
+    height: 30px;
+    border-radius: 50px;
+    border: none;
+    background: linear-gradient(45deg, rgb(213, 244, 255), rgb(151, 227, 255), rgb(79, 208, 255)); 
+    cursor: pointer;
+    font-weight: 700;
+    transition: all 500ms ease;
+}
+
+.create-new-entry-btn:hover {
+    background: linear-gradient(45deg, rgba(213, 244, 255, 0.767), rgba(151, 227, 255, 0.767), rgba(79, 208, 255, 0.767)); 
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+.content-container {
+    margin-top: 160px;
+}
+
+.entry-thu-moi-container {
+    width: 70vw;
+    padding-left: 70px;
+    margin-right: 0px;
+    display: flex;
+    flex-wrap: wrap;             
+    justify-content: flex-start; 
+    gap: 20px;                    
+    box-sizing: border-box;
+}
+
+.go-back-container {
+    position: absolute;
+    top: 160px;
+    left: 68px;
+}
+
+.go-back-btn {
+    padding-left: 5px;
+    width: 100px;
+    height: 30px;
+    border-radius: 50px;
+    border: none;
+    cursor: pointer;
+    font-weight: 700;
+    background: rgb(110, 216, 255);
+    transition: 200ms;
+    text-align: start;
+}
+
+.go-back-btn:hover {
+    background: rgba(110, 216, 255, 0.699);
+}
+
+.add-icon {
+    vertical-align: middle;
+    margin-right: 4px;
+}
+
+.entry-thu-moi {
+    flex: 0 0 auto;           
+    width: 300px;
+    height: 280px;
+    background: white;
+    border-radius: 10px;
+    margin-bottom: 30px;
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.11);
+}
+
+.entry-thu-moi-cover img {
+    overflow: hidden;
+    width: 300px;
+    height: 180px;
+    object-fit: cover;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+}
+
+.entry-thu-moi-info {
+    padding-top: 12px;
+    font-weight: 800;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+.btn-thu-moi-container {
+    display: inline-block;
+    margin-top: 17px;
+    display: flex;
+    justify-content: center;
+
+}
+
+.sua-thu-moi-btn {
+    margin-right: 15px;
+    width: 130px;
+    height: 30px;
+    border-radius: 5px;
+    border: none;
+    background: rgb(110, 216, 255);
+    transition: 200ms;
+    cursor: pointer;
+}
+
+.sua-thu-moi-btn:hover {
+    background: rgba(110, 216, 255, 0.699);
+}
+
+.sua-thu-moi-icon {
+    vertical-align: middle;
+    margin-left: 3px;
+}
+
+.xoa-thu-moi-btn {
+    width: 120px;
+    height: 30px;
+    border-radius: 5px;
+    border: none;
+    background: rgb(110, 216, 255);
+    transition: 200ms;
+    cursor: pointer;
+}
+
+.xoa-thu-moi-btn:hover {
+    background: rgba(110, 216, 255, 0.699);
+}
+
+.xoa-thu-moi-icon {
+    vertical-align: middle;
+    margin-left: 3px;
+}
+
+.footer-thongtin {
+    padding-top: 15px;
+    margin-top: 15px;
+    padding-left: 60px;
+    width: 100%;
+    margin-bottom: 20px;
+}
+
+.copyright-thongtin {
+    width: 680px;
+    font-size: 13px;
+    display: inline-block;
+    font-weight: 500;
+}
+.year-thongtin {
+    width: 80px;
+    font-size: 13px;
+    font-weight: bold;
+    display: inline-block;
+    text-align: right;
+    float: right;
+    margin-right: 70px;
+    margin-top: 2px;
+    cursor: default;
+}

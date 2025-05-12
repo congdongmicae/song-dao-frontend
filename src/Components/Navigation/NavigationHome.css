@@ -1,0 +1,194 @@
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color:transparent;
+    margin-top: 20px;
+    /*
+    position: sticky;
+    top: 0;
+    */
+}
+
+nav .logo-home {
+    font-size: 21px;
+    font-weight: 700;
+    margin: 1rem;
+    margin-left: 68px;
+    background: radial-gradient(#7bdcff, #36c9ff, #9edbf0, #b7e8f8);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    transition: 500ms;
+    line-height: 19.5px;
+}
+
+nav .logo-home:hover {
+    opacity: 0.5;
+}
+
+.sub-header {
+    font-weight: 500;
+    font-size: 15px;
+}
+
+nav ul {
+    display: flex;
+}
+
+nav ul li {
+    display: flex;
+    list-style-type: none;
+    padding: 0;
+    margin-right: 0;
+}
+
+nav ul li a {
+    display: block;
+    text-decoration: none;
+    color: black;
+    margin: 0px;
+    transition: 200ms;
+}
+
+nav ul li a:hover {
+    opacity: 0.7;
+}
+
+.btn-cha-bien {
+    border: none;
+    padding: 7px;
+    cursor: pointer;
+    border-radius: 6em;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+    transition: transform .3s ease;
+}
+
+
+.btn-cha-bien::before {
+    content: '';
+    position: absolute;
+    width: 120%;
+    height: 350%;
+    background: linear-gradient(#33adda, #117ea5, rgb(110, 216, 255), #9be4ff, #a3e4fc);
+}
+
+.btn-cha-bien::after {
+    content: 'CHA BIÊN';
+    position: absolute;
+    background-color: #f1f0f0;
+    width: 98%;
+    height: 87%;
+    border-radius: 5em;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    bottom: 2px;
+}
+
+/*.btn-cha-bien:hover {
+    transform: scale(1.1);
+}*/
+
+.btn-cha-bien:hover::before {
+    animation: spin 1.5s infinite linear;
+}
+
+/**/
+.btn-congdong {
+    border: none;
+    padding: 7px;
+    cursor: pointer;
+    border-radius: 6em;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+    transition: transform .3s ease;
+}
+
+.btn-congdong::before {
+    content: '';
+    position: absolute;
+    width: 150%;
+    height: 470%;
+    background: linear-gradient(#33adda, #117ea5, rgb(110, 216, 255), #9be4ff, #a3e4fc);
+}
+
+.btn-congdong::after {
+    content: 'CỘNG ĐỒNG';
+    position: absolute;
+    background-color: #f1f0f0;
+    width: 99%;
+    height: 89%;
+    border-radius: 5em;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    bottom: 2px;
+}
+
+/*.btn-congdong:hover {
+    transform: scale(1.1);
+}*/
+
+.btn-congdong:hover::before {
+    animation: spin 1.5s infinite linear;
+}
+
+@keyframes spin {
+    to{
+        transform: rotate(360deg);
+    }
+}
+
+/**/
+.contact-fb {
+    margin-right: 55px;
+}
+
+.btn-fb {
+    border: none;
+    padding: 7px;
+    cursor: pointer;
+    border-radius: 6em;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+    transition: transform .3s ease;
+}
+
+.btn-fb::before {
+    content: '';
+    position: absolute;
+    width: 150%;
+    height: 470%;
+    background: linear-gradient(#33adda, #117ea5, rgb(110, 216, 255), #9be4ff, #a3e4fc);
+}
+
+.btn-fb::after {
+    content: 'FACEBOOK';
+    position: absolute;
+    background-color: #f1f0f0;
+    width: 98%;
+    height: 88%;
+    border-radius: 5em;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    bottom: 2px;
+}
+
+/*.btn-fb:hover {
+    transform: scale(1.1);
+}*/
+
+.btn-fb:hover::before {
+    animation: spin 1.5s infinite linear;
+}

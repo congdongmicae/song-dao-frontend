@@ -1,0 +1,108 @@
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    text-decoration: none;
+}
+
+.back {
+    width: 120px;
+}
+
+.go-back {
+    display: block;
+    padding-bottom: 20px;
+    color: black;
+    width: 120px;
+}
+
+.go-back a{
+    width: 120px;
+}
+
+.go-back:visited {
+    color: black;
+}
+.arrow-go-back {
+    margin-bottom: -3px;
+    margin-right: 10px;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.login {
+    width: 420px;
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+    background: rgba(255, 255, 255, 0.658);
+    color: black;
+    border-radius: 10px;
+    padding: 30px 20px;
+}
+
+.login h1 {
+    font-size: 36px;
+    text-align: center;
+}
+
+.login .login-input {
+    position: relative;
+    width: 100%;
+    height: 50px;
+    margin: 30px 0;
+}
+
+.login-input input {
+    width: 100%;
+    height: 100%;
+    background-color: rgb(236, 234, 234);
+    backdrop-filter: blur(50px);
+    background-color: rgba(255, 255, 255, 0.795);
+    border: none;
+    outline: none;
+    border-radius: 40px;
+    border: gray solid 1px;
+    font-size: 16px;
+    padding: 20px 45px 20px 20px;
+    box-shadow: 0 0 10px rgba(255, 255, 255, 0.336);
+}
+
+.login-input input::placeholder {
+    color: black;
+}
+
+input:-webkit-autofill {
+    -webkit-box-shadow: 0 0 0 30px #ffffff inset !important;
+}
+
+.login button {
+    width: 100%;
+    height: 45px;
+    color: rgb(0, 0, 0);
+    font-size: 16px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, .1);
+    margin-bottom: 10px;
+    margin-top: 10px;
+    cursor: pointer;
+    border: 1px solid rgba(255, 255, 255, 0.15);
+    border-radius: 999px;
+    background: rgb(110, 216, 255);
+    transition: all 0.3s ease;
+}
+
+.login button:hover {
+    background: rgba(110, 216, 255, 0.699);
+}
+
+.show-password-checkbox {
+    margin-left: 7px;
+    margin-bottom: 15px;
+}
+
+.show-password {
+    margin-left: 5px;
+}
+
+input[type="checkbox"] {
+    accent-color: rgb(110, 216, 255);
+}

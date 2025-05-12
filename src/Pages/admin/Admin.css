@@ -1,0 +1,147 @@
+body {
+    overflow-x: hidden;
+}
+
+.admin-container {
+    width: 100vw;
+    min-height: 92vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 10px;
+    box-sizing: border-box;
+}
+
+.content-container {
+    margin-top: 160px;
+}
+
+.logout-btn {
+    margin-top: 70px;
+    width: 125px;
+    height: 30px;
+    border-radius: 50px;
+    border: none;
+    background: rgb(110, 216, 255);
+    cursor: pointer;
+    transition: 200ms;
+}
+
+.logout-btn:hover {
+    background: rgba(110, 216, 255, 0.699);
+}
+
+.logout-icon {
+    vertical-align: middle;
+    margin-left: 3px;
+}
+
+.upload-icon {
+    padding-top: 70px;
+    background: rgb(110, 216, 255);
+    height: 200px;
+}
+
+.upload-text {
+    height: 190px;
+    font-size: 16px;
+    padding-top: 25px;
+    font-weight: 800;
+    padding-left: 12px;
+}
+
+.space-btwn-text {
+    margin-top: 10px;
+}
+
+.description-text {
+    font-size: 14px;
+}
+
+.upload-thu-giao-xu {
+    position: relative;
+    background: rgb(240, 240, 240);
+    width: 30%;
+    height: 392px;
+    border: solid 1px rgb(202, 202, 202);
+    color: #000000;
+    font-weight: 500;
+    text-align: center;
+    display: inline-block;
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+}
+
+.upload-thu-moi {
+    position: relative;
+    background: rgb(240, 240, 240);
+    width: 30%;
+    height: 392px;
+    border: solid 1px rgb(202, 202, 202);
+    color: #000000;
+    font-weight: 500;
+    text-align: center;
+    display: inline-block;
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+.upload-cao-pho {
+    position: relative;
+    background: rgb(240, 240, 240);
+    width: 30%;
+    height: 392px;
+    border: solid 1px rgb(202, 202, 202);
+    color: #000000;
+    font-weight: 500;
+    text-align: center;
+    display: inline-block;
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+}
+
+.redirect {
+    position: absolute;
+    bottom: 15px;
+    right: 12px;
+    transition: 200ms;
+}
+
+.redirect-btn {
+    background: rgb(110, 216, 255);
+    cursor: pointer;
+    transition: 200ms;
+    border: none;
+    width: 40px;
+    height: 40px;
+    border-radius: 50px;
+}
+
+.redirect-btn:hover {
+    background: rgba(110, 216, 255, 0.699);
+}
+
+.footer-thongtin {
+    margin-top: 10px;
+    padding-left: 60px;
+    width: 100%;
+    margin-bottom: 20px;
+}
+
+.copyright-thongtin {
+    width: 680px;
+    font-size: 13px;
+    display: inline-block;
+    font-weight: 500;
+}
+.year-thongtin {
+    width: 80px;
+    font-size: 13px;
+    font-weight: bold;
+    display: inline-block;
+    text-align: right;
+    float: right;
+    margin-right: 70px;
+    margin-top: 2px;
+    cursor: default;
+}

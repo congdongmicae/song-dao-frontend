@@ -1,0 +1,89 @@
+.modal-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background: rgba(0,0,0,0.5);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.modal {
+    background: white;
+    padding: 20px;
+    border-radius: 8px;
+    min-width: 300px;
+}
+
+.header {
+    position: relative;
+    font-size: 25px;
+    font-weight: 700;
+    margin-bottom: 30px;
+}
+
+.close-btn {
+    position: absolute;
+    top: 0;
+    right: 0;
+    background: rgb(110, 216, 255);
+    border: none;
+    width: 30px;
+    height: 30px;
+    border-radius: 15px;
+    font-weight: 700;
+    cursor: pointer;
+    transition: 300ms;
+}
+
+.close-btn:hover {
+    background: rgba(110, 216, 255, 0.699);
+}
+
+.form-container {
+    text-align: left;
+}
+
+.space-between {
+    margin-bottom: 20px;
+}
+
+.submit-btn {
+    background: rgb(110, 216, 255);
+    border: none;
+    width:100px;
+    height: 30px;
+    border-radius: 15px;
+    font-weight: 700;
+    cursor: pointer;
+    transition: 300ms;
+}
+
+.submit-btn:hover {
+    background: rgba(110, 216, 255, 0.699);
+}
+
+.create-title-input {
+    border: 1px solid;
+    width: 242px;
+    height: 30px;
+    border-radius: 20px;
+    font-weight: 500;
+    padding: 0px 10px;
+}
+
+.file-upload::-webkit-file-upload-button {
+    font-family: "Unbounded", sans-serif;
+    font-size: 15px;
+    padding: 4px 10px;
+    background: rgb(110, 216, 255);
+    border: none;
+    cursor: pointer;
+    border-radius: 20px;
+}
+
+.space {
+    margin-top: 5px;
+}
