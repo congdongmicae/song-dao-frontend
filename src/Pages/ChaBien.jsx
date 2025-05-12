@@ -1,5 +1,5 @@
 import React from 'react'
-import './ChaBien.css'
+import './ChaBien.css';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faPersonDigging } from '@fortawesome/free-solid-svg-icons';
 
