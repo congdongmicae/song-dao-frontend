@@ -51,7 +51,6 @@ const CaoPho = () => {
                     ngươi: ngươi là của riêng Ta!"<br></br>
                     - Isaiah 43: 1b
                 </div>
-
             </div>
             <div className="cao-pho-content-container">
                 <div className="cao-pho-selection-container">

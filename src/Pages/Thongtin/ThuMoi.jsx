@@ -1,9 +1,11 @@
 import React from 'react'
 import './ThuMoi.css'
+import { useNavigate } from 'react-router-dom';
 import { useState, useEffect } from 'react';
-import { FaPlus, FaDownload, FaEye } from 'react-icons/fa';
+import { FaPlus, FaDownload, FaEye, FaArrowLeft } from 'react-icons/fa';
 
 const ThuMoi = () => {
+    const navigate = useNavigate();
     const [entries, setEntries] = useState([]);
     const fetchEntries = () => {
         fetch('https://song-dao-backend.onrender.com/thumoi/entry')
@@ -33,15 +35,23 @@ const ThuMoi = () => {
     };
 
     return (
-        <div className="quan-ly-thu-moi-container">
-            <div className="thu-moi-content-container">
+        <div className="thu-moi-main-container">
+            <div className="thu-moi-header">
+                <div className="thu-moi-go-back-button" onClick={() => navigate('/thongtin')}>
+                    <div className="circle-background">
+                    </div>
+                    <div className="circle-foreground">
+                        <span className="fa-arrow-thu-moi"><FaArrowLeft size={25} /></span>
+                    </div>
+                </div>
+
+                <div className="quote">
+                    THƯ MỜI<br></br> Download và Xem Thư
+                </div>
+            </div>
+            <div className="thu-moi-main-content-container">
                 <div className="thu-moi-selection-container">
                     <center>
-                        <div className="thu-moi-button-container">
-                            <button className="thu-moi-create-new-entry-btn">
-                                <FaPlus size={15} className="add-icon" /> go back
-                            </button>
-                        </div>
                         <div className="thu-moi-show-entry-container">
                             {entries.length > 0 ? (
                                 entries.map(entry => (

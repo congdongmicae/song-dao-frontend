@@ -2,9 +2,10 @@ import React from 'react'
 import './ThuGiaoXu.css'
 import { Link, useNavigate } from 'react-router-dom';  // React Router for navigation
 import { useState, useEffect } from 'react';
-import { FaPlus, FaDownload, FaEye } from 'react-icons/fa';
+import { FaPlus, FaDownload, FaEye, FaArrowLeft } from 'react-icons/fa';
 
 const ThuGiaoXu = () => {
+    const navigate = useNavigate();
     const [entries, setEntries] = useState([]);
     const fetchEntries = () => {
         fetch('https://song-dao-backend.onrender.com/thugiaoxu/entry')
@@ -34,15 +35,23 @@ const ThuGiaoXu = () => {
     };
 
     return (
-        <div className="quan-ly-container">
-            <div className="content-container">
+        <div className="thu-giao-xu-main-container">
+            <div className="thu-giao-xu-header">
+                <div className="thu-giao-xu-go-back-button" onClick={() => navigate('/thongtin')}>
+                    <div className="circle-background">
+                    </div>
+                    <div className="circle-foreground">
+                        <span className="fa-arrow-thu-giao-xu"><FaArrowLeft size={25} /></span>
+                    </div>
+                </div>
+
+                <div className="quote">
+                    THƯ GIÁO XỨ<br></br> Download và Xem Thư
+                </div>
+            </div>
+            <div className="thu-giao-xu-content-container">
                 <div className="selection-container">
                     <center>
-                        <div className="button-container">
-                            <button className="create-new-entry-btn">
-                                <FaPlus size={15} className="add-icon" /> go back
-                            </button>
-                        </div>
                         <div className="show-entry-container">
                             {entries.length > 0 ? (
                                 entries.map(entry => (

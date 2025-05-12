@@ -26,12 +26,12 @@ const Media = () => {
                 </div>
             </center>
 
-            <div className="footer-media">
-                <div className="copyright-media">
+            <div className="footer-thongtin">
+                <div className="copyright-thongtin">
                     © Cộng Đồng Thánh Micae - Tổng Giáo Phận Paderborn & Essen
                 </div>
-                <div className="year-media">
-                    2024
+                <div className="year-thongtin">
+                    2025
                 </div>
             </div>
         </div>

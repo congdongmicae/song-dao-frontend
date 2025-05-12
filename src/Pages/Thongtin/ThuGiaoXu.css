@@ -1,4 +1,4 @@
-.quan-ly-container {
+.thu-giao-xu-main-container {
     width: 100vw;
     min-height: 92vh;
     display: flex;
@@ -9,8 +9,73 @@
     box-sizing: border-box;
 }
 
-.content-container {
-    margin-top: 160px;
+.thu-giao-xu-content-container {
+    margin-top: 1px;
+}
+
+.thu-giao-xu-header {
+    position: relative;
+    display: flex;    
+    justify-content: center;
+    align-items: center; 
+    height: 235px;
+    min-width: 90vw;
+    padding-left: 15px;
+    padding-right: 15px;
+    border-radius: 10px;
+    margin-bottom: 40px;
+    margin-top: 30px;
+    background: rgb(110, 216, 255);
+    color: white;
+}
+
+.fa-arrow-thu-giao-xu {
+    color: rgb(110, 216, 255);
+    cursor: pointer;
+}
+
+.circle-background {
+    position: absolute;
+    width: 50px;
+    height: 50px;
+    top: 20px;
+    left: 25px;
+    border-radius: 40px;
+    background: white;
+    cursor: pointer;
+}
+
+.circle-foreground {
+    position: absolute;
+    width: 44px;
+    height: 44px;
+    top: 23px;
+    left: 28px;
+    border-radius: 40px;
+    background: rgb(255, 255, 255); 
+    display: flex;         
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+}
+
+.quote {
+    display: flex;
+    text-align: left;  
+    text-align: center; 
+    font-weight: 900;
+    font-size: 30px;  
+}
+
+.thu-giao-xu-create-new-entry-btn {
+    width: 200px;
+    height: 30px;
+    border-radius: 50px;
+    border: none;
+    background: rgb(110, 216, 255);
+    cursor: pointer;
+    font-weight: 700;
+    transition: 200ms;
 }
 
 .create-new-entry-btn {
