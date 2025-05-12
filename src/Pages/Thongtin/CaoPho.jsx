@@ -2,9 +2,10 @@ import React from 'react'
 import './CaoPho.css'
 import { Link, useNavigate } from 'react-router-dom';  // React Router for navigation
 import { useState, useEffect } from 'react';
-import { FaPlus, FaDownload, FaEye, FaCross, FaAsterisk } from 'react-icons/fa';
+import { FaPlus, FaDownload, FaEye, FaCross, FaAsterisk, FaArrowLeft } from 'react-icons/fa';
 
 const CaoPho = () => {
+    const navigate = useNavigate();
     const [entries, setEntries] = useState([]);
     const fetchEntries = () => {
         fetch('https://song-dao-backend.onrender.com/caopho/entry')
@@ -34,15 +35,27 @@ const CaoPho = () => {
     };
 
     return (
-        <div className="cao-pho-quan-ly-container">
+        <div className="cao-pho-container">
+            <div className="cao-pho-header">
+                <div className="cao-pho-go-back-button" onClick={() => navigate('/thongtin')}>
+                    <div className="circle-background">
+                    </div>
+                    <div className="circle-foreground">
+                        <span className="fa-arrow"><FaArrowLeft size={25} /></span>
+                    </div>
+                </div>
+
+                <div className="quote">
+                    "Đừng sợ, vì Ta đã chuộc ngươi về,<br></br>
+                    đã gọi ngươi bằng chính tên<br></br>
+                    ngươi: ngươi là của riêng Ta!"<br></br>
+                    - Isaiah 43: 1b
+                </div>
+
+            </div>
             <div className="cao-pho-content-container">
                 <div className="cao-pho-selection-container">
                     <center>
-                        <div className="cao-pho-button-container">
-                            <button className="cao-pho-create-new-entry-btn">
-                                <FaPlus size={15} className="add-icon" /> go back
-                            </button>
-                        </div>
                         <div className="cao-pho-show-entry-container">
                             {entries.length > 0 ? (
                                 entries.map(entry => (

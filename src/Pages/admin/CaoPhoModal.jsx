@@ -78,7 +78,6 @@ const CaoPhoModal = ({ isOpen, onClose, onSubmitSuccess }) => {
                                 type="text"
                                 className="create-title-input"
                                 placeholder="dd.MM.yyyy"
-                                value={birth}
                                 onChange={handleDateInputChange(setBirth)}
                                 required
                             />
@@ -90,7 +89,6 @@ const CaoPhoModal = ({ isOpen, onClose, onSubmitSuccess }) => {
                                 type="text"
                                 className="create-title-input"
                                 placeholder="dd.MM.yyyy"
-                                value={death}
                                 onChange={handleDateInputChange(setDeath)}
                                 required
                             />

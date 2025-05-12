@@ -52,7 +52,7 @@ function QuanLyCaoPho() {
 
     return (
         <div className="quan-ly-cao-pho-container">
-            <div className="cao-pho-content-container">
+            <div className="quan-ly-cao-pho-content-container">
                 <div className="cao-pho-select-container">
                     <div className="cao-pho-go-back-container">
                         <button className="go-back-btn" onClick={() => navigate('/admin')}>

@@ -388,6 +388,10 @@ p.congdong-text {
     text-decoration: none;
 }
 
-.admin a:visited {
+.admin a:link,
+.admin a:visited,
+.admin a:hover,
+.admin a:active {
     color: #84cde7;
+    text-decoration: none;
 }

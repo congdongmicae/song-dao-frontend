@@ -1,4 +1,4 @@
-.cao-pho-quan-ly-container {
+.cao-pho-container {
     width: 100vw;
     min-height: 92vh;
     display: flex;
@@ -10,7 +10,59 @@
 }
 
 .cao-pho-content-container {
-    margin-top: 160px;
+    margin-top: 1px;
+}
+
+.cao-pho-header {
+    position: relative;
+    display: flex;    
+    justify-content: center;
+    align-items: center; 
+    height: 235px;
+    min-width: 90vw;
+    padding-left: 15px;
+    padding-right: 15px;
+    border-radius: 10px;
+    margin-top: 30px;
+    background: rgb(71, 13, 138);
+    color: white;
+}
+
+.fa-arrow {
+    color: rgb(71, 13, 138);
+    cursor: pointer;
+}
+
+.circle-background {
+    position: absolute;
+    width: 50px;
+    height: 50px;
+    top: 20px;
+    left: 25px;
+    border-radius: 40px;
+    background: white;
+    cursor: pointer;
+}
+
+.circle-foreground {
+    position: absolute;
+    width: 44px;
+    height: 44px;
+    top: 23px;
+    left: 28px;
+    border-radius: 40px;
+    background: rgb(255, 255, 255); 
+    display: flex;         
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+}
+
+.quote {
+    display: flex;
+    text-align: left;   
+    font-weight: 900;
+    font-size: 30px;  
 }
 
 .cao-pho-create-new-entry-btn {
@@ -52,9 +104,9 @@
 
 .cao-pho-entry {
     color: white;
-    width: 300px;
+    width: 310px;
     height: 413px;
-    background: rgba(0, 0, 0, 0.671);
+    background: rgb(71, 13, 138);
     border-top-left-radius: 10px;
     margin-bottom: 30px;
     border-radius: 10px;
@@ -63,7 +115,7 @@
 
 .cao-pho-entry-cover img {
     overflow: hidden;
-    width: 300px;
+    width: 310px;
     height: 270px;
     object-fit: cover;
     object-position: top;
@@ -83,6 +135,7 @@
 
 .cao-pho-entry-info {
     padding-top: 12px;
+    font-size: 14px;
     font-weight: 800;
 }
 
@@ -98,13 +151,13 @@
     height: 30px;
     border-radius: 5px;
     border: none;
-    background: rgb(90, 32, 119);
+    background: rgb(94, 18, 180);
     transition: 200ms;
     cursor: pointer;
 }
 
 .cao-pho-download-btn:hover {
-    background: rgba(90, 32, 119, 0.733);
+    background: rgb(108, 22, 207);
 }
 
 .download-icon {
@@ -118,13 +171,13 @@
     height: 30px;
     border-radius: 5px;
     border: none;
-    background: rgb(90, 32, 119);
+    background: rgb(94, 18, 180);
     transition: 200ms;
     cursor: pointer;
 }
 
 .cao-pho-xem-btn:hover {
-    background: rgba(90, 32, 119, 0.733);
+    background: rgb(108, 22, 207);
 }
 
 .xem-icon {

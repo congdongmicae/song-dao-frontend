@@ -42,7 +42,7 @@
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
 }
 
-.cao-pho-content-container {
+.quan-ly-cao-pho-content-container {
     margin-top: 160px;
 }
 
@@ -87,7 +87,7 @@
 
 .entry-cao-pho {
     flex: 0 0 auto;           
-    width: 300px;
+    width: 313px;
     height: 370px;
     background: white;
     border-radius: 10px;
@@ -97,7 +97,7 @@
 
 .entry-cao-pho-cover img {
     overflow: hidden;
-    width: 300px;
+    width: 313px;
     height: 270px;
     object-fit: cover;
     object-position: top;
@@ -107,11 +107,12 @@
 
 .entry-cao-pho-info {
     padding-top: 12px;
-    font-weight: 800;
+    font-weight: 900;
     display: flex;
     flex-direction: column;
     align-items: center;
     text-align: center;
+    font-size: 14px;
 }
 
 .btn-cao-pho-container {
