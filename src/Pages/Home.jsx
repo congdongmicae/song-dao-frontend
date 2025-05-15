@@ -5,6 +5,12 @@ import { IoIosArrowRoundDown } from "react-icons/io";
 import { IoIosArrowRoundForward } from "react-icons/io";
 import { IoIosArrowRoundUp } from "react-icons/io";
 import { useEffect } from 'react';
+import thongTinImage from '../assets/images/thongtin-thumb.jpg';
+import sinhHoatImage from '../assets/images/sinhhoat-thumb.jpg';
+import mediaImage from '../assets/images/media-thumb.jpg';
+import congDongImage from '../assets/images/congdong-thumb.jpg';
+import thanhMicaeImage from '../assets/images/thanh-micae.png';
+
 
 const Home = () => {
     const scrollToBottom = () => {
@@ -28,7 +34,7 @@ const Home = () => {
                 <div className="home-container">
                     <Link to="/thongtin">
                         <div className="thongtin-container">
-                            <img src="src/assets/images/thongtin-thumb.jpg"></img>
+                            <img src={thongTinImage}></img>
                             <p className="thongtin-text">
                                 THÔNG TIN
                             </p>
@@ -40,7 +46,7 @@ const Home = () => {
 
                     <Link to="/sinhhoat">
                         <div className="sinhhoat-container">
-                            <img src="src/assets/images/sinhhoat-thumb.jpg"></img>
+                            <img src={sinhHoatImage}></img>
                             <p className="sinhhoat-text">
                                 SINH HOẠT
                             </p>
@@ -52,7 +58,7 @@ const Home = () => {
 
                     <Link>
                         <div className="media-container">
-                            <img src="src/assets/images/media-thumb.jpg"></img>
+                            <img src={mediaImage}></img>
                             <p className="media-text">
                                 <span className="media-text-headline">Chưa hoàn thành</span> <br></br>MEDIA
                             </p>
@@ -63,7 +69,7 @@ const Home = () => {
                     </div>
 
                     <div className="congdong-container">
-                        <img src="src/assets/images/congdong-thumb.jpg"></img>
+                        <img src={congDongImage}></img>
                         <p className="congdong-text">
                             <span className="congdong-text-headline">Chưa hoàn thành</span> <br></br> VỀ <br></br> CỘNG <br></br>ĐỒNG
                         </p>
@@ -84,7 +90,7 @@ const Home = () => {
                     </button>
 
                     <div className="img-text-container-home">
-                        <img className="thanh-micae" src="src/assets/images/thanh-micae.png"></img>
+                        <img className="thanh-micae" src={thanhMicaeImage}></img>
                         <div className="thanh-micae-text">
                             VỀ<br></br>THÁNH<br></br>MICAE<br></br>
                             <Link to="#">
