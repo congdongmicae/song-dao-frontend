@@ -28,6 +28,10 @@ function QuanLyThuMoi() {
     };
 
     useEffect(() => {
+        const isLoggedIn = sessionStorage.getItem('adminLoggedIn');
+        if (!isLoggedIn) {
+            navigate('/admin-login');
+        }
         fetchEntries();
     }, []);
 
